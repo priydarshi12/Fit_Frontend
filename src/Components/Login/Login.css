@@ -1,0 +1,172 @@
+.login{
+    background-image: url('../../assets/regis_back.jpg');
+    gap: 6rem;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background image */
+    background-position: top;
+    height: 100vh; /* Adjust as needed */
+    position: relative;
+}
+
+.header-l{
+    position: absolute;
+    z-index: 2;
+    top:2rem;
+    left: 2rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    background-color: rgba(0, 0,0, 0.5);
+    color: #fff;
+   
+    border:2px solid var(--orange);
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    color: var(--orange);
+  }
+  
+  .title::after {
+    width: 1rem;
+    height: 1rem;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::after,
+  .title::before {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    left: 0px;
+    background-color: var(--orange);
+  }
+  
+  .flex {
+    display: flex;
+    
+    justify-content:space-between;
+  }
+  
+  .border {
+    background-image: linear-gradient(
+      to right bottom,
+      #e300ff,
+      #ff00aa,
+      #ff5956,
+      #ffb900,
+      #fffe00
+    );
+    padding: 3px;
+  }
+  
+  
+  .input{
+      background-color: #212121;
+      max-width: 180px;
+      height: 2.7rem;
+      padding: 0 19x 0 10px;
+      font-size: 1.1rem;
+      position: relative;
+      border:none;
+      color: white;
+      outline: 0;
+      overflow: hidden;
+  }
+  
+  .input::placeholder{
+      transition:all 0.5s ease-in,transform 0.2s ease-in 0.6s;
+  }
+  
+  
+  .input:focus::placeholder{
+   padding-left: 4rem;
+  transform:translateY(-50px);
+  }
+  
+  
+  .input1{
+      background-color: #212121;
+      width: 388px;
+      height: 2.7rem;
+      padding: 0 19x 0 10px;
+      font-size: 1.1rem;
+      position: relative;
+      border:none;
+      color: white;
+      outline: 0;
+      overflow: hidden;
+  }
+  
+  .input1::placeholder{
+      transition:all 0.5s ease-in,transform 0.2s ease-in 0.6s;
+  }
+  
+  
+  .input1:focus::placeholder{
+   padding-left: 15rem;
+  transform:translateY(-50px);
+  }
+  
+  .submit{
+      width:390px;
+      border:none;
+      outline: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 10px;
+      color: #fff;
+      font-size:16px ;
+      transform: .3s ease;
+      background-color: #212121;
+  }
+  
+  .sigin{
+      font-size:14.5px ;
+      color:rgba(255,255,255,0.7);
+      text-align: center;
+  }
+  
+  .link{
+      text-decoration: none;
+      color:var(--orange);
+  }
+  
+  
+  @keyframes pulse{
+    from{
+      transform: scale(0.9);
+      opacity: 1;
+    }
+    to{
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
